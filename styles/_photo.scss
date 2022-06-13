@@ -1,0 +1,31 @@
+.photo {
+    padding: $section-padding 0;
+    margin: 0 24px;
+}
+
+@media screen and (max-width: $bp1) {
+    .photo {
+        margin: 0 12px;
+    }
+}
+
+@media screen and (max-width: $bp2) {
+    .photo {
+        padding: $section-padding-bp2 0;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .photo {
+        padding: $section-padding-bp3 0;
+        margin: 0 24px;
+    }
+}
+
+@media screen and (max-width: $bp4) {
+    .photo {
+        padding: $section-padding-bp4 0;
+        margin: 0 15px;
+    }
+}

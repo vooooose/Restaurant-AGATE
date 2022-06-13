@@ -1,0 +1,19 @@
+.title {
+    font-size: 1.6rem;
+    line-height: calc((50 / 40) * 100%);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: $bp2) {
+    .title {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}

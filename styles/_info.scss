@@ -1,0 +1,17 @@
+.info {
+    font-weight: $base-fw;
+    line-height: calc((31 / 25) * 100%);
+    color: $secondary-text-color;
+}
+
+@media screen and (max-width: $bp2) {
+    .info {
+        font-size: .88rem;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .info {
+        font-size: .8rem;
+    }
+}

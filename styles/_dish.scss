@@ -1,0 +1,155 @@
+.dish {
+    flex: 0 1 calc((100% - 2 * 48px) / 3);
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+    &__image {
+        margin-bottom: 35px;
+        font-size: 0;
+        img {
+            @include img;
+        }
+    }
+    &__info {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__info> :not(:last-child) {
+        margin-bottom: 15px;
+    }
+    &__name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: calc((38 / 30) * 100%);
+    }
+    &__text {
+        flex: 1 1 auto;
+        font-size: .72rem;
+        font-weight: $base-fw;
+        line-height: calc((23 / 18) * 100%);
+        color: $secondary-text-color
+    }
+    &__price {
+        font-size: .72rem;
+        font-weight: $big-heading-fw;
+        line-height: calc((23 / 18) * 100%);
+    }
+    &--red {
+        &::after {
+            @include sticker("HOT!", #d33b3b);
+        }
+    }
+    &--green {
+        &::after {
+            @include sticker("NEW!", #b3e151);
+        }
+    }
+    &--yellow {
+        &::after {
+            @include sticker("HIT!", #e5a434);
+        }
+    }
+}
+
+@media screen and (max-width: $bp2) {
+    .dish {
+        flex: 0 1 calc((100% - 2 * 92px) / 3);
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+        &__image {
+            margin-bottom: 15px;
+        }
+        &__name {
+            font-size: 1rem;
+        }
+        &__text,
+        &__price {
+            font-size: .6rem;
+        }
+        &--red {
+            &::after {
+                @include sticker-bp2;
+            }
+        }
+        &--green {
+            &::after {
+                @include sticker-bp2;
+            }
+        }
+        &--yellow {
+            &::after {
+                @include sticker-bp2;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 835px) {
+    .dish {
+        &__name {
+            font-size: .88rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .dish {
+        flex: 0 1 calc((100% - 2 * 58px) / 3);
+        flex-direction: row;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin: 0 0 58px 0;
+        }
+        &__image {
+            flex: 0 0 47.48%;
+            margin-bottom: 0;
+        }
+        &__info {
+            align-self: center;
+            flex: 1 1 auto;
+            margin: 0 0 0 24px;
+        }
+        &__info> :not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &__text,
+        &__price {
+            font-size: .8rem;
+        }
+        &--red {
+            &::after {
+                @include sticker-bp3;
+            }
+        }
+        &--green {
+            &::after {
+                @include sticker-bp3;
+            }
+        }
+        &--yellow {
+            &::after {
+                @include sticker-bp3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .dish {
+        flex-direction: column;
+        &__image {
+            margin-bottom: 15px;
+        }
+        &__info {
+            align-self: flex-start;
+            margin: 0 0 0 0;
+        }
+    }
+}

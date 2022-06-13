@@ -1,0 +1,38 @@
+.dishes {
+    padding: 100px 42px;
+    max-width: 1175px;
+    margin: 0 auto;
+    &__info {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: $bp2) {
+    .dishes {
+        padding: 80px 42px;
+        &__info {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .dishes {
+        padding: 70px 24px 70px 52px;
+        &__info {
+            margin-bottom: 58px;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .dishes {
+        padding: 70px 42px;
+    }
+}
+
+@media screen and (max-width: $bp4) {
+    .dishes {
+        padding: 60px 42px;
+    }
+}

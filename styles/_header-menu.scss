@@ -1,0 +1,49 @@
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        color: $main-color;
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: calc((28 / 22) * 100%);
+        transition: color 0.3s ease 0s;
+        &:not(:last-child) {
+            margin-right: 25px;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1.5px;
+                height: 16px;
+                background-color: #D8D5D5;
+                margin-left: 25px;
+            }
+        }
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header-menu {
+        &__item {
+            font-size: .72rem;
+            &:not(:last-child)::after {
+                height: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header-menu {
+        &__item {
+            &:not(:last-child) {
+                margin-right: 15px;
+                &::after {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

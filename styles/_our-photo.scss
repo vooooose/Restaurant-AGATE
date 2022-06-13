@@ -1,0 +1,22 @@
+.our-photo {
+    flex: 0 1 calc((100% - 24px) / 2);
+    max-height: 595px;
+    margin-bottom: 24px;
+    img {
+        @include img;
+    }
+}
+
+@media screen and (max-width: $bp2) {
+    .our-photo {
+        flex: 0 1 calc((100% - 10px) / 2);
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .our-photo {
+        flex: 0 1 calc((100% - 12px) / 2);
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,54 @@
+.cook {
+    background-color: $bg-color;
+    padding: $section-padding;
+    &__image {
+        width: 398px;
+        height: 396px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 30px;
+        img {
+            @include img;
+        }
+    }
+    &__info {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: $bp2) {
+    .cook {
+        padding: $section-padding-bp2;
+        &__text {
+            max-width: 691px;
+        }
+        &__image {
+            width: 282px;
+            height: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .cook {
+        padding: $section-padding-bp3;
+        &__content {
+            &>*:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__text {
+            max-width: 626px;
+        }
+        &__image {
+            width: 251px;
+            height: 249px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp4) {
+    .cook {
+        padding: $section-padding-bp4;
+    }
+}

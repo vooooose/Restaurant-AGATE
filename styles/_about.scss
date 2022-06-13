@@ -1,0 +1,28 @@
+.about {
+    background-color: $bg-color;
+    padding: $section-padding;
+}
+
+@media screen and (max-width: $bp2) {
+    .about {
+        padding: $section-padding-bp2;
+        &__text {
+            max-width: 624px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .about {
+        padding: $section-padding-bp3;
+        &__text {
+            max-width: 541px;
+        }
+    }
+}
+
+@media screen and (max-width: $bp4) {
+    .about {
+        padding: $section-padding-bp4;
+    }
+}

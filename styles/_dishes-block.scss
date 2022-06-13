@@ -1,0 +1,19 @@
+.dishes-block {
+    max-width: 1205px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: $bp2) {
+    .dishes-block {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .dishes-block {
+        flex-direction: column;
+        max-width: 674px;
+    }
+}

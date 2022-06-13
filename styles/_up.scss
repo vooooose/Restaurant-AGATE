@@ -1,0 +1,21 @@
+.up {
+    width: 70px;
+    height: 70px;
+    background-color: #FFAC1C;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../icons/up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: $bp4) {
+    .up {
+        width: 55px;
+        height: 55px;
+        bottom: 10px;
+        right: 10px;
+    }
+}

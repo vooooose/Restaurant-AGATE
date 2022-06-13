@@ -1,0 +1,18 @@
+.logo {
+    color: $main-color;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: calc((63 / 50) * 100%);
+}
+
+@media screen and (max-width: 1300px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: $bp4) {
+    .logo {
+        margin-bottom: 5px;
+    }
+}

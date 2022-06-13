@@ -1,0 +1,21 @@
+.photo-block {
+    max-width: 1872px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0;
+    margin-bottom: -24px;
+}
+
+@media screen and (max-width: $bp2) {
+    .photo-block {
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .photo-block {
+        margin-bottom: -12px;
+    }
+}

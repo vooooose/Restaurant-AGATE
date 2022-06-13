@@ -1,0 +1,15 @@
+.footer-media {
+    &__link {
+        color: $main-color;
+        font-size: 2rem;
+        display: inline-block;
+        transition: color, transform 0.3s ease 0s;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &:hover {
+            color: $hover-color;
+            transform: scale(1.3);
+        }
+    }
+}

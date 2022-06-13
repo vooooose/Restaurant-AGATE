@@ -1,0 +1,18 @@
+.text {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: $base-fw;
+    line-height: calc((41 / 30) * 100%);
+}
+
+@media screen and (max-width: $bp2) {
+    .text {
+        font-size: .88rem;
+    }
+}
+
+@media screen and (max-width: $bp3) {
+    .text {
+        font-size: .8rem;
+    }
+}
